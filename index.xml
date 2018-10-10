@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travis Waelbroeck</title>
+    <link>https://traviswaelbro.github.io/</link>
+    <description>Recent content on Travis Waelbroeck</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Oct 2018 23:17:59 -0500</lastBuildDate>
+    
+	<atom:link href="https://traviswaelbro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://traviswaelbro.github.io/blog/introduction/</link>
+      <pubDate>Tue, 09 Oct 2018 23:17:59 -0500</pubDate>
+      
+      <guid>https://traviswaelbro.github.io/blog/introduction/</guid>
+      <description>Welcome! I&amp;rsquo;m not sure why you&amp;rsquo;re here, but if you want to read about things I find interesting, then stick around!
+I&amp;rsquo;m an Application Engineer at Blue Stingray, a software company in St. Louis, MO. I&amp;rsquo;ve been working on Odoo projects for about 3 years at this point, which is written in Python and XML. I&amp;rsquo;ve used Sublime Text most of my career, but I switched to Neovim full time earlier this year and I&amp;rsquo;m not looking back.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://traviswaelbro.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://traviswaelbro.github.io/contact/</guid>
+      <description>This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out Formspree for a simple, free form service.
+Your Name Email Address An email address is required.  Message   </description>
+    </item>
+    
+  </channel>
+</rss>
