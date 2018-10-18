@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://traviswaelbro.github.io/blog/pre-commit/</loc>
+    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://traviswaelbro.github.io/blog/introduction/</loc>
     <lastmod>2018-10-09T23:17:59-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -11,7 +18,7 @@
   
   <url>
     <loc>https://traviswaelbro.github.io/blog/</loc>
-    <lastmod>2018-10-09T23:17:59-05:00</lastmod>
+    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -36,7 +43,7 @@
   
   <url>
     <loc>https://traviswaelbro.github.io/</loc>
-    <lastmod>2018-10-09T23:17:59-05:00</lastmod>
+    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
