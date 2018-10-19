@@ -293,12 +293,15 @@ by including an <code>args</code> property in your <code>hooks</code> call, such
       args: [--myarg1=1, --myarg1=2]
 </code></pre>
 
-<blockquote>
-<p>When you next run pre-commit, your script will be called:
-<code>path/to/script-or-system-exe --myarg1=1 --myarg1=2 dir/file1 dir/file2 file3</code>
-If the args property is empty or not defined, your script will be called:
-<code>path/to/script-or-system-exe dir/file1 dir/file2 file3</code></p>
-</blockquote>
+<p>When you next run pre-commit, your script will be called:</p>
+
+<pre><code>path/to/script-or-system-exe --myarg1=1 --myarg1=2 dir/file1 dir/file2 file3
+</code></pre>
+
+<p>If the args property is empty or not defined, your script will be called:</p>
+
+<pre><code>path/to/script-or-system-exe dir/file1 dir/file2 file3
+</code></pre>
 
 <p>Here&rsquo;s an intermediate example of a commit-only hook that will reject an
 attempted commit if it doesn&rsquo;t pass <code>docformatter</code>:</p>
