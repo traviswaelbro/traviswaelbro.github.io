@@ -42,7 +42,7 @@
 
 <meta itemprop="datePublished" content="2018-10-18T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-10-18T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="788">
+<meta itemprop="wordCount" content="729">
 
 
 
@@ -152,15 +152,6 @@ commits, before and after pushes, and more. Use it to automate validation,
 linting, and more to keep your codebase in check before things even hit the git
 server.</p>
 
-<p><em><strong>Note:</strong> pre-commit uses the term &ldquo;hooks&rdquo; to mean &ldquo;run the piece of code that matches
-the hook&rsquo;s <code>id</code>&rdquo;. In all cases below, I will be using &ldquo;hooks&rdquo; to mean the same.</em></p>
-
-<p>Pre-commit itself supports just a few git hooks at this time, but it is a very
-powerful tool that can make life easier, especially when working on teams. The
-pre-commit package has <a href="https://pre-commit.com/hooks.html">many pre-defined hooks</a>
-that you can add to your repository to have it take care of the grunt work for
-you.</p>
-
 <p><em><strong>Note</strong>: This heavily references the pre-commit documentation, but it is by no means a
 comprehensive overview of everything that pre-commit can do. Check out
 <a href="https://pre-commit.com">the pre-commit website</a> to find out more for yourself.</em></p>
@@ -233,6 +224,10 @@ run against your project.</p>
     hooks:
     - id: jshint
 </code></pre>
+
+<p>The pre-commit package has <a href="https://pre-commit.com/hooks.html">many pre-defined hooks</a>
+that you can add to your repository to have it take care of the grunt work for
+you.</p>
 
 <h4 id="confining-hooks-to-run-at-certain-stages">Confining hooks to run at certain stages</h4>
 
