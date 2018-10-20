@@ -17,9 +17,8 @@
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://traviswaelbro.github.io/blog/pre-commit/</guid>
-      <description>Note: This heavily references the pre-commit documentation, but it is by no means a comprehensive overview of everything that pre-commit can do. Check out the pre-commit website to find out more for yourself.
-What is pre-commit?  pre-commit is a framework for managing and maintaining multi-language pre-commit hooks.
- Basically, pre-commit is a Python package that provides a maintainable way to manage your git hooks. Git hooks allow you to run some code (or commands) on certain git events, such as before and after commits, before and after pushes, and more.</description>
+      <description>What is pre-commit?  pre-commit is a framework for managing and maintaining multi-language pre-commit hooks.
+ Basically, pre-commit is a Python package that provides a maintainable way to manage your git hooks. Git hooks allow you to run some code (or commands) on certain git events, such as before and after commits, before and after pushes, and more. Use it to automate validation, linting, and more to keep your codebase in check before things even hit the git server.</description>
     </item>
     
     <item>
