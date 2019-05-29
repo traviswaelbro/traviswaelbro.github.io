@@ -3,6 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://traviswaelbro.github.io/blog/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://traviswaelbro.github.io/blog/vim/search/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://traviswaelbro.github.io/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://traviswaelbro.github.io/blog/pre-commit/</loc>
     <lastmod>2018-10-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -17,15 +36,7 @@
   </url>
   
   <url>
-    <loc>https://traviswaelbro.github.io/blog/</loc>
-    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://traviswaelbro.github.io/categories/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
@@ -37,14 +48,6 @@
   
   <url>
     <loc>https://traviswaelbro.github.io/tags/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://traviswaelbro.github.io/</loc>
-    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   

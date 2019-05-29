@@ -6,10 +6,19 @@
     <description>Recent content on Travis Waelbroeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://traviswaelbro.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Project-Level Searching in Vim</title>
+      <link>https://traviswaelbro.github.io/blog/vim/search/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://traviswaelbro.github.io/blog/vim/search/</guid>
+      <description>Basic searching in Vim is mostly straightforward once you spend a few minutes with it. It works quickly and easily - unless you need to search outside of the current file. Then the water gets a little muddier and there are a multitude of different recommendations from every corner of the internet. I&amp;rsquo;ve found a good workflow for managing my own project-level searches, but I still use a few different methods.</description>
+    </item>
     
     <item>
       <title>Using pre-commit to Automate Git Hooks</title>
