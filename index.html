@@ -36,7 +36,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://traviswaelbro.github.io/" />
 
-<meta property="og:updated_time" content="2019-05-28T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-06-07T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Travis Waelbroeck">
 <meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe.">
@@ -170,14 +170,15 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/blog/vim/search/" class="color-inherit dim link">
-            Project-Level Searching in Vim
+          <a href="/blog/vim/snippets/reposition_screen_after_mark_jump/" class="color-inherit dim link">
+            Reposition Screen after Jumping to a Mark
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Basic searching in Vim is mostly straightforward once you spend a few minutes with it. It works quickly and easily - unless you need to search outside of the current file. Then the water gets a little muddier and there are a multitude of different recommendations from every corner of the internet. I&rsquo;ve found a good workflow for managing my own project-level searches, but I still use a few different methods.
+          I&rsquo;ve been using Marks more often lately to help me jump around files easily. The downside I&rsquo;ve been finding is that it&rsquo;s hard to tell where your cursor is after jumping to your mark (even though I&rsquo;m using a highlighted cursor line).
+As often happens with tech-related nuisances, I&rsquo;m not the first one to notice this issue. This snippet comes courtesy of u/princker&rsquo;s comment on a Reddit post titled, How to center screen after moving to a mark.
         </div>
-          <a href="/blog/vim/search/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="/blog/vim/snippets/reposition_screen_after_mark_jump/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -194,15 +195,15 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/blog/pre-commit/" class="color-inherit dim link">
-            Using pre-commit to Automate Git Hooks
+          <a href="/blog/vim/notes/" class="color-inherit dim link">
+            Vim Notes
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          What is pre-commit?  pre-commit is a framework for managing and maintaining multi-language pre-commit hooks.
- Basically, pre-commit is a Python package that provides a maintainable way to manage your git hooks. Git hooks allow you to run some code (or commands) on certain git events, such as before and after commits, before and after pushes, and more. Use it to automate validation, linting, and more to keep your codebase in check before things even hit the git server.
+          These are things that I occasionally need, but can&rsquo;t always remember and can&rsquo;t always find again easily.
+Output Shell Command into Buffer Often times I want to output a list of directories to ensure that they are all in a relevant list inside of a manifest or Docker file. The :read command is perfect for this because it will just grab (read) the results of any shell command and place the results into the buffer.
         </div>
-          <a href="/blog/pre-commit/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="/blog/vim/notes/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -217,6 +218,18 @@
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/blog/vim/search/" class="link black dim">
+              Project-Level Searching in Vim
+            </a>
+          </h2>
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/blog/pre-commit/" class="link black dim">
+              Using pre-commit to Automate Git Hooks
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/blog/introduction/" class="link black dim">

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Travis Waelbroeck  | Project-Level Searching in Vim</title>
+    <title>Travis Waelbroeck  | Vim Notes</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -28,30 +28,30 @@
 
     
 
-    <meta property="og:title" content="Project-Level Searching in Vim" />
-<meta property="og:description" content="{{ .TableOfContents }}
-Basic searching in Vim is mostly straightforward once you spend a few minutes with it. It works quickly and easily - unless you need to search outside of the current file. Then the water gets a little muddier and there are a multitude of different recommendations from every corner of the internet. I&rsquo;ve found a good workflow for managing my own project-level searches, but I still use a few different methods." />
+    <meta property="og:title" content="Vim Notes" />
+<meta property="og:description" content="These are things that I occasionally need, but can&rsquo;t always remember and can&rsquo;t always find again easily.
+Output Shell Command into Buffer Often times I want to output a list of directories to ensure that they are all in a relevant list inside of a manifest or Docker file. The :read command is perfect for this because it will just grab (read) the results of any shell command and place the results into the buffer." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://traviswaelbro.github.io/blog/vim/search/" />
-<meta property="article:published_time" content="2019-05-28T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-05-28T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://traviswaelbro.github.io/blog/vim/notes/" />
+<meta property="article:published_time" content="2019-05-29T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-05-29T00:00:00&#43;00:00"/>
 
-<meta itemprop="name" content="Project-Level Searching in Vim">
-<meta itemprop="description" content="{{ .TableOfContents }}
-Basic searching in Vim is mostly straightforward once you spend a few minutes with it. It works quickly and easily - unless you need to search outside of the current file. Then the water gets a little muddier and there are a multitude of different recommendations from every corner of the internet. I&rsquo;ve found a good workflow for managing my own project-level searches, but I still use a few different methods.">
+<meta itemprop="name" content="Vim Notes">
+<meta itemprop="description" content="These are things that I occasionally need, but can&rsquo;t always remember and can&rsquo;t always find again easily.
+Output Shell Command into Buffer Often times I want to output a list of directories to ensure that they are all in a relevant list inside of a manifest or Docker file. The :read command is perfect for this because it will just grab (read) the results of any shell command and place the results into the buffer.">
 
 
-<meta itemprop="datePublished" content="2019-05-28T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-05-28T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="839">
+<meta itemprop="datePublished" content="2019-05-29T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-05-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="112">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Project-Level Searching in Vim"/>
-<meta name="twitter:description" content="{{ .TableOfContents }}
-Basic searching in Vim is mostly straightforward once you spend a few minutes with it. It works quickly and easily - unless you need to search outside of the current file. Then the water gets a little muddier and there are a multitude of different recommendations from every corner of the internet. I&rsquo;ve found a good workflow for managing my own project-level searches, but I still use a few different methods."/>
+<meta name="twitter:title" content="Vim Notes"/>
+<meta name="twitter:description" content="These are things that I occasionally need, but can&rsquo;t always remember and can&rsquo;t always find again easily.
+Output Shell Command into Buffer Often times I want to output a list of directories to ensure that they are all in a relevant list inside of a manifest or Docker file. The :read command is perfect for this because it will just grab (read) the results of any shell command and place the results into the buffer."/>
 
   </head>
 
@@ -147,214 +147,32 @@ Basic searching in Vim is mostly straightforward once you spend a few minutes wi
           
         BLOGS
       </p>
-      <h1 class="f1 athelas mb1">Project-Level Searching in Vim</h1>
+      <h1 class="f1 athelas mb1">Vim Notes</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2019-05-28T00:00:00Z">May 28, 2019</time>      
+      <time class="f6 mv4 dib tracked" datetime="2019-05-29T00:00:00Z">May 29, 2019</time>      
       
       
     </header>
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 
-<p>{{ .TableOfContents }}</p>
+<p>These are things that I occasionally need, but can&rsquo;t always remember and can&rsquo;t
+always find again easily.</p>
 
-<p><a href="https://vim.fandom.com/wiki/Searching">Basic searching</a> in Vim is mostly
-straightforward once you spend a few minutes with it. It works quickly and
-easily - unless you need to search outside of the current file. Then the
-water gets a little muddier and there are a multitude of different
-recommendations from every corner of the internet. I&rsquo;ve found a good workflow
-for managing my own project-level searches, but I still use a few different
-methods.</p>
+<h2 id="output-shell-command-into-buffer">Output Shell Command into Buffer</h2>
 
-<p>For the vast majority of project-level searches, I&rsquo;m happy using
-<a href="https://github.com/junegunn/fzf.vim">FZF</a> with CTAGS. I&rsquo;m normally looking
-for method definitions or usages, so a keymap running a simple <code>:Tags &lt;C-R&gt;</code>
-(word under cursor) suffices.</p>
+<p>Often times I want to output a list of directories to ensure that they are all
+in a relevant list inside of a manifest or Docker file. The <code>:read</code> command is
+perfect for this because it will just grab (<em>read</em>) the results of any shell
+command and place the results into the buffer.</p>
 
-<blockquote>
-<p><em>Note: I&rsquo;ve configured CTAGS to automatically generate via git hooks. A big
-thanks to Tim Pope, whose <a href="https://tbaggery.com/2011/08/08/effortless-ctags-with-git.html">2011 blog post</a>
-details how to achieve this. You can also set up an
-<a href="https://vim.fandom.com/wiki/Autocmd_to_update_ctags_file">autocmd to update your CTAGS file</a>
-if that&rsquo;s better for you.</em></p>
-</blockquote>
+<pre><code>&quot; (If desired) Create a new, empty buffer to write shell output
+:vnew
 
-<p>In the past, I&rsquo;ve used <a href="https://github.com/BurntSushi/ripgrep">Ripgrep</a> to
-handle fuzzy grep searching the entire project, but that&rsquo;s become much less
-efficient now that I&rsquo;m working on projects with larger codebases. Since then,
-I&rsquo;ve been mostly just exiting Vim and using standard shell grep because I
-initially had a lot of trouble getting project-level search working from
-within Vim.</p>
-
-<p>All that changed recently when I saw a hint in
-<a href="https://twitter.com/MasteringVim/status/1132003298372988928">a tweet from Mastering Vim</a>
-about <code>vimgrep</code> (which I&rsquo;ve used a very little bit in the past), after which
-I found <a href="http://vimcasts.org/episodes/search-multiple-files-with-vimgrep/">Drew Neil&rsquo;s Vimcast</a>
-on the subject. Armed with a better understanding, I finally sat down to figure
-out a better way, which has filled the missing gap for my workflow.</p>
-
-<p>You can <strong>see the details in the section below</strong>, but now that I can use Vim&rsquo;s
-internal grep on a project level, I&rsquo;m an even happier camper than before. I&rsquo;m
-still using FZF to quickly search CTAGs, but for searching outside of CTAGS,
-using <code>vimgrep</code> has worked with great success.</p>
-
-<pre><code>vimgrep &lt;search&gt; **/*.&lt;filetype&gt;
+&quot; List only names of sub-directories in the current directory
+&quot; Replace `./*`  with whatever relevant path, such as `_lib/*`
+:read !ls -d ./*
 </code></pre>
-
-<hr />
-
-<h2 id="internal-vs-external-grep">Internal vs. External Grep</h2>
-
-<p>Before getting into details about how to use each of Vim&rsquo;s grep commands, let&rsquo;s
-discuss their differences and why you might want to use one versus the other.</p>
-
-<p><strong>Internal Grep (<code>:vimgrep</code>)</strong></p>
-
-<p>The <code>:vimgrep</code> command is implemented inside Vim.</p>
-
-<p>In my opinion, the main draw of <code>vimgrep</code> is that it uses Vim’s built-in regex
-engine, so you can reuse the patterns that work with Vim’s standard search
-command.</p>
-
-<p>This especially comes in handy when searching for more complex patterns, with
-special characters. You can test the search within a file you know to have the
-pattern, then reuse the pattern in the grep command. Conversely, command line
-grep tools often have a different evaluation of special characters, so you might
-have to modify the command if using external (command line) grep.</p>
-
-<p>The downside of <code>vimgrep</code> is that it&rsquo;s sometimes noticeably slower then external
-grep commands.</p>
-
-<p><strong>External Grep (<code>:grep</code>)</strong></p>
-
-<p>The <code>:grep</code> command is a call to a grep command implemented outside Vim.</p>
-
-<p>By default, this just uses the standard shell grep, which means the benefit is
-faster execution - sometimes significantly faster. For simple pattern searches,
-you&rsquo;ll usually be fine to just use <code>grep</code>.</p>
-
-<p>However, for complex search patterns (with special characters) and/or special
-include/exclude directories, I prefer the syntax of the <code>vimgrep</code> command.</p>
-
-<p>See some examples of each in the sections below.</p>
-
-<hr />
-
-<h2 id="internal-grep-vimgrep">Internal Grep (<code>vimgrep</code>)</h2>
-
-<p>From Vim&rsquo;s help dialog:</p>
-
-<pre><code>:vim[grep][!] {pattern} {file} ...
-:vim[grep][!] /{pattern}/[g][j] {file} ...
-</code></pre>
-
-<p>The <code>vimgrep</code> command populates the quickfix list with the results of your
-search. You can traverse the results with a few commands which can be easily
-mapped. If you&rsquo;re using <a href="https://github.com/tpope/vim-unimpaired">vim-unimpaired</a>,
-then you can use the key mappings already built into that plugin.</p>
-
-<table>
-<thead>
-<tr>
-<th>Ex command</th>
-<th>unimpaired map</th>
-<th>effect</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>:cprev[ious]</td>
-<td>[q</td>
-<td>reverse through quickfix list</td>
-</tr>
-
-<tr>
-<td>:cnext</td>
-<td>]q</td>
-<td>advance through quickfix list</td>
-</tr>
-
-<tr>
-<td>:cfirst</td>
-<td>[Q</td>
-<td>go to start of quickfix list</td>
-</tr>
-
-<tr>
-<td>:clast</td>
-<td>]Q</td>
-<td>go to end of quickfix list</td>
-</tr>
-</tbody>
-</table>
-
-<p>In most of my project level searches, I&rsquo;ll have matching results across many
-different files. Normally this is a nuisance to jump between files, but not with
-<code>vimgrep</code>. As you advance through the results, Vim will go through the results
-in the first file, then it will jump to the next file with results.</p>
-
-<p><img src="https://d26aqo05ggejx9.cloudfront.net/vimgrep-string-filetype.gif" alt="Example vimgrep GIF" /></p>
-
-<h3 id="examples">Examples:</h3>
-
-<h4 id="search-the-current-file">Search the current file</h4>
-
-<pre><code>:vimgrep my_string %
-:vimgrep /my_string/ %
-</code></pre>
-
-<h4 id="resursive-search-of-the-working-directory">Resursive Search of the working directory</h4>
-
-<pre><code>:vimgrep my_string **
-:vimgrep /my_string/ **
-</code></pre>
-
-<h4 id="recursive-search-of-files-of-a-certain-type-within-the-working-directory">Recursive Search of files of a certain type within the working directory</h4>
-
-<pre><code>:vimgrep my_string **/*.py
-:vimgrep /my_string/ **/*.py
-</code></pre>
-
-<hr />
-
-<h2 id="external-grep-grep">External Grep (<code>grep</code>)</h2>
-
-<p>External grep is Vim&rsquo;s way of simply calling the command line grep process in
-a shell child process. Vim will just pass whatever you give it, take the
-results back from the shell, and put it in the quickfix list.</p>
-
-<p>From Vim&rsquo;s help dialog:</p>
-
-<pre><code>:gr[ep][!] [arguments]
-</code></pre>
-
-<h3 id="examples-1">Examples:</h3>
-
-<h4 id="search-the-current-file-1">Search the current file</h4>
-
-<pre><code>:grep my_string %
-</code></pre>
-
-<h4 id="resursive-search-of-the-working-directory-1">Resursive Search of the working directory</h4>
-
-<pre><code>:grep -rn my_string **
-</code></pre>
-
-<h4 id="recursive-search-of-files-of-a-certain-type-within-the-working-directory-1">Recursive Search of files of a certain type within the working directory</h4>
-
-<pre><code>:grep -rn my_string ** --include=*.py
-</code></pre>
-
-<hr />
-
-<h2 id="additional-reading">Additional Reading</h2>
-
-<ul>
-<li><a href="https://seesparkbox.com/foundry/demystifying_multi_file_searches_in_vim_and_the_command_line">Demystifying Multi-file Searches in Vim (and the command line)</a>
-by <a href="https://twitter.com/ethanmuller?lang=en">Ethan Muller</a></li>
-<li><a href="https://codeyarns.com/2017/09/15/how-to-grep-in-vim/">How to grep in Vim</a> by <a href="https://codeyarns.com/author/ashwinn/">Ashwinn, of Code Yarns</a></li>
-</ul>
 <ul class="pa0">
   
 </ul>
