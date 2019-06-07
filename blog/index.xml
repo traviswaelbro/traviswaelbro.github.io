@@ -22,26 +22,6 @@ As often happens with tech-related nuisances, I&amp;rsquo;m not the first one to
     </item>
     
     <item>
-      <title>Vim Notes</title>
-      <link>https://traviswaelbro.github.io/blog/vim/notes/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://traviswaelbro.github.io/blog/vim/notes/</guid>
-      <description>These are things that I occasionally need, but can&amp;rsquo;t always remember and can&amp;rsquo;t always find again easily.
-Output Shell Command into Buffer Often times I want to output a list of directories to ensure that they are all in a relevant list inside of a manifest or Docker file. The :read command is perfect for this because it will just grab (read) the results of any shell command and place the results into the buffer.</description>
-    </item>
-    
-    <item>
-      <title>Project-Level Searching in Vim</title>
-      <link>https://traviswaelbro.github.io/blog/vim/search/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://traviswaelbro.github.io/blog/vim/search/</guid>
-      <description>{{ .TableOfContents }}
-Basic searching in Vim is mostly straightforward once you spend a few minutes with it. It works quickly and easily - unless you need to search outside of the current file. Then the water gets a little muddier and there are a multitude of different recommendations from every corner of the internet. I&amp;rsquo;ve found a good workflow for managing my own project-level searches, but I still use a few different methods.</description>
-    </item>
-    
-    <item>
       <title>Using pre-commit to Automate Git Hooks</title>
       <link>https://traviswaelbro.github.io/blog/pre-commit/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
