@@ -6,10 +6,22 @@
     <description>Recent content in Blogs on Travis Waelbroeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://traviswaelbro.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Open Current File in Sublime Text from Vim</title>
+      <link>https://traviswaelbro.github.io/blog/vim/snippets/open_current_file_in_sublime/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://traviswaelbro.github.io/blog/vim/snippets/open_current_file_in_sublime/</guid>
+      <description>Sometimes, I just want to open the current file in Sublime Text for simplicity sake.
+Usually, this is due to some automated commands I have in Vim, but not Sublime Text - like black which I might not want to run on certain legacy files.
+This is a simple command, but one that I often forget and don&amp;rsquo;t see directly documented elsewhere online. So, here it is:
+:!subl %:p  Breakdown:</description>
+    </item>
     
     <item>
       <title>Reposition Screen after Jumping to a Mark</title>
@@ -19,6 +31,26 @@
       <guid>https://traviswaelbro.github.io/blog/vim/snippets/reposition_screen_after_mark_jump/</guid>
       <description>I&amp;rsquo;ve been using Marks more often lately to help me jump around files easily. The downside I&amp;rsquo;ve been finding is that it&amp;rsquo;s hard to tell where your cursor is after jumping to your mark (even though I&amp;rsquo;m using a highlighted cursor line).
 As often happens with tech-related nuisances, I&amp;rsquo;m not the first one to notice this issue. This snippet comes courtesy of u/princker&amp;rsquo;s comment on a Reddit post titled, How to center screen after moving to a mark.</description>
+    </item>
+    
+    <item>
+      <title>Vim Notes</title>
+      <link>https://traviswaelbro.github.io/blog/vim/notes/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://traviswaelbro.github.io/blog/vim/notes/</guid>
+      <description>These are things that I occasionally need, but can&amp;rsquo;t always remember and can&amp;rsquo;t always find again easily.
+Output Shell Command into Buffer Often times I want to output a list of directories to ensure that they are all in a relevant list inside of a manifest or Docker file. The :read command is perfect for this because it will just grab (read) the results of any shell command and place the results into the buffer.</description>
+    </item>
+    
+    <item>
+      <title>Project-Level Searching in Vim</title>
+      <link>https://traviswaelbro.github.io/blog/vim/search/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://traviswaelbro.github.io/blog/vim/search/</guid>
+      <description>{{ .TableOfContents }}
+Basic searching in Vim is mostly straightforward once you spend a few minutes with it. It works quickly and easily - unless you need to search outside of the current file. Then the water gets a little muddier and there are a multitude of different recommendations from every corner of the internet. I&amp;rsquo;ve found a good workflow for managing my own project-level searches, but I still use a few different methods.</description>
     </item>
     
     <item>
@@ -39,6 +71,15 @@ As often happens with tech-related nuisances, I&amp;rsquo;m not the first one to
       <guid>https://traviswaelbro.github.io/blog/introduction/</guid>
       <description>Welcome! I&amp;rsquo;m not sure why you&amp;rsquo;re here, but if you want to read about things I find interesting, then stick around!
 I&amp;rsquo;m an Application Engineer at Blue Stingray, a software company in St. Louis, MO. I&amp;rsquo;ve been working on Odoo projects for about 3 years at this point, which is written in Python and XML. I&amp;rsquo;ve used Sublime Text most of my career, but I switched to Neovim full time earlier this year and I&amp;rsquo;m not looking back.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://traviswaelbro.github.io/blog/python/snippets/getattr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://traviswaelbro.github.io/blog/python/snippets/getattr/</guid>
+      <description></description>
     </item>
     
   </channel>
